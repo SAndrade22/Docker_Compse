@@ -1,0 +1,64 @@
+// Estilos generales para la aplicación
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #343a40; // Un color de fondo oscuro para el sidebar
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.view-container {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+// Aquí puedes añadir estilos adicionales para tu cabecera y menú
+.app-cabecera {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+}
+
+// Estilizando el menú con estilos de Material Angular
+app-menu {
+  .mat-button {
+    color: white;
+    margin: 10px 0;
+    justify-content: start;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  .mat-icon {
+    margin-right: 10px;
+  }
+}
+
+// Estilos adicionales para la visualización del contenido
+.view-container {
+  background-color: #eef1f5; // Un color claro para el área de contenido
+  border-top-left-radius: 30px; // Un borde redondeado para suavizar la transición
+
+  // Puedes incluir transiciones suaves para las rutas al cambiar
+  & > * {
+    transition: opacity 0.3s ease-in-out;
+  }
+}
+
+// SCSS para los componentes individuales (CreateClienteComponent, HomeComponent, etc.)
+// Deberías agregar estos estilos en sus respectivos archivos SCSS

@@ -1,0 +1,74 @@
+/* crear-curso.component.scss */
+
+.container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  padding: 40px;
+  border-radius: 15px; // Bordes aún más redondeados para un estilo moderno
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15); // Sombra más pronunciada para efecto de elevación
+  background: #ffffff; // Fondo limpio
+  transition: box-shadow 0.3s ease; // Transición suave para la sombra
+
+  &:hover {
+    box-shadow: 0 12px 24px rgba(0,0,0,0.18); // Efecto hover sutil
+  }
+
+  h2 {
+    font-size: 2.4em; // Más grande para una mayor presencia
+    color: #5D5C61; // Color suave y contemporáneo
+    margin-bottom: 40px;
+    font-weight: bold; // Fuente en negrita para títulos
+  }
+
+  .form-group {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  label {
+    display: block;
+    font-size: 1.1em; // Un poco más grande para mejorar la legibilidad
+    margin-bottom: 15px;
+    color: #495057; // Color suave pero definido para las etiquetas
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 18px;
+    border: none;
+    border-radius: 10px; // Bordes suavemente redondeados
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); // Sombra más definida
+    font-size: 1em;
+    background-color: #f7f7f7; // Fondo neutro y acogedor
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+
+    &:focus {
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 0 0 3px rgba(213,217,222,0.5); // Sombra suave al enfocar
+      transform: translateY(-2px); // Elevación sutil al enfocar
+      outline: none;
+    }
+  }
+
+  .btn-primary {
+    padding: 12px 30px;
+    font-size: 1.1em;
+    font-weight: 500; // Peso medio para la fuente del botón
+    border-radius: 10px; // Botones redondeados
+    background-image: linear-gradient(135deg, #4d9f0c 0%, #6dd014 100%); // Gradiente verde fresco
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      background-image: linear-gradient(135deg, #6dd014 0%, #4d9f0c 100%); // Inversión del gradiente
+      transform: translateY(-2px); // Elevación sutil para interactividad
+    }
+  }
+}

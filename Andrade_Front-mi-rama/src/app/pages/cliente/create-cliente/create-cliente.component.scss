@@ -1,0 +1,75 @@
+/* crear-usuario.component.scss */
+
+.container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff; // Fondo blanco para limpieza visual
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12); // Sombra más profunda para efecto flotante
+  border-radius: 12px; // Bordes suavemente redondeados
+}
+
+h2 {
+  font-size: 2.2em; // Tamaño de fuente ligeramente más grande
+  color: #5D5C61; // Un color moderno y neutro
+  margin-bottom: 40px;
+  font-weight: 600; // Aumentar la negrita para el título
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+label {
+  font-size: 1em; // Normalizar el tamaño de la fuente para accesibilidad
+  margin-bottom: 12px;
+  color: #6c757d; // Color suavizado para las etiquetas
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: none; // Eliminar el borde para un estilo más limpio
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1); // Sombra interior para definición sutil
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f8f9fa; // Fondo sutil para diferenciar el campo
+  &:focus {
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1), 0 0 0 2px #007bff; // Enfoque claro con doble sombra
+    outline: none;
+  }
+}
+
+.btn-primary {
+  padding: 10px 25px;
+  font-size: 1.1em;
+  font-weight: 500; // Peso de fuente medio
+  border-radius: 8px;
+  border: none;
+  background-color: #28a745; // Color de botón primario más vibrante
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease; // Transición suave para color y transformación
+  &:hover {
+    background-color: #218838; // Color más oscuro en hover para feedback visual
+    transform: translateY(-2px); // Ligero movimiento hacia arriba para interacción
+  }
+}
+
+// Media queries para responsividad en dispositivos móviles
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.8em; // Ajustar el tamaño del título para pantallas más pequeñas
+  }
+}

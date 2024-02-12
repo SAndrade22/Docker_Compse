@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  <div class="vertical-toolbar">
+    <!-- Inicio -->
+    <a mat-button routerLink="/inicio" class="toolbar-button">
+      <mat-icon>home</mat-icon> Inicio
+    </a>
+    <span class="separator"></span>
+    <!-- Registrar -->
+    <button mat-button [matMenuTriggerFor]="menu3" class="toolbar-button">
+      <mat-icon>assignment</mat-icon> Registrar
+    </button>
+    <mat-menu #menu3="matMenu">
+      <button mat-menu-item routerLink="/crearC">
+        <mat-icon>person_add</mat-icon> Crear Clientes
+      </button>
+      <button mat-menu-item routerLink="/crearP">
+        <mat-icon>note_add</mat-icon> Crear Artículo
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>

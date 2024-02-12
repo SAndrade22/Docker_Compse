@@ -1,0 +1,88 @@
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; // Fuente moderna y legible
+  
+    h2 {
+      color: #4A4E69; // Color suave y moderno para los títulos
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2em;
+      font-weight: 600; // Aumento del peso para dar más presencia al título
+    }
+  
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+  
+      thead {
+        background-color: #0062cc; // Un tono de azul más profundo para encabezados
+        color: #ffffff;
+  
+        th {
+          padding: 15px;
+          text-align: left;
+          border-bottom: 3px solid #ffffff; // Contraste con el fondo del encabezado
+          font-size: 1em;
+          letter-spacing: 0.5px; // Espaciado de letras para un look más refinado
+        }
+      }
+  
+      tbody {
+        tr {
+          &:nth-child(odd) {
+            background-color: #f2f2f2; // Un color de fondo más claro para las filas
+          }
+  
+          &:hover {
+            background-color: #d6e4ff; // Un azul suave al pasar el ratón
+          }
+  
+          td {
+            padding: 15px;
+            border-bottom: 1px solid #cccccc; // Líneas más finas y suaves
+            font-size: 0.9em;
+          }
+        }
+      }
+  
+      .btn-editar, .btn-eliminar {
+        padding: 8px 20px;
+        border: none;
+        cursor: pointer;
+        font-size: 0.9em;
+        border-radius: 5px;
+        margin: 5px;
+        transition: transform 0.2s, box-shadow 0.2s;
+  
+        &:hover {
+          transform: scale(1.05); // Un ligero aumento de tamaño al pasar el ratón
+          box-shadow: 0 2px 4px rgba(0,0,0,0.2); // Sombra para dar sensación de elevación
+        }
+      }
+  
+      .btn-editar {
+        background-color: #f9c851; // Un color más cálido y suave
+        color: #343a40; // Color oscuro para el texto para mejor contraste
+  
+        &:hover {
+          background-color: #f0b429;
+        }
+      }
+  
+      .btn-eliminar {
+        background-color: #f86c6b; // Un rojo menos agresivo para la eliminación
+        color: #ffffff;
+  
+        &:hover {
+          background-color: #f04e47;
+        }
+      }
+    }
+  }
+  

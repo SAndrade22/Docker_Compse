@@ -1,0 +1,30 @@
+<!-- listar-productos.component.html -->
+<app-cabecera></app-cabecera>
+
+<div class="container">
+  <h2>Listado de Articulos</h2>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categoria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productosList">
+        <td>{{ producto.id }}</td>
+        <td>{{ producto.nombre }}</td>
+        <td>{{ producto.precio }}</td>
+        <td>{{ producto.categoria }}</td>
+        <td>
+          <!-- Agregar aquí botones de acciones, por ejemplo, editar y eliminar -->
+          <button class="btn-editar"(click)="editarProducto(producto)">Editar</button>
+          <button class="btn-eliminar"(click)="eliminarProducto(producto.id)">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

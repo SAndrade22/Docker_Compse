@@ -1,0 +1,77 @@
+/* crear-curso.component.scss */
+
+.container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff; // Fondo claro para que el contenido resalte
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15); // Sombra más pronunciada para un efecto 3D
+  border-radius: 12px; // Bordes más redondeados
+}
+
+.form-title {
+  font-size: 2.2em; // Ligeramente más grande para mayor impacto visual
+  color: #5D5C61; // Color suave y moderno
+  margin-bottom: 40px;
+  font-weight: 600; // Aumentar la negrita para el título
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  font-size: 1em; // Mantener el tamaño de fuente coherente para accesibilidad
+  margin-bottom: 12px;
+  color: #6c757d; // Color más moderno para texto
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: none; // Quitar el borde para un look más limpio
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); // Sombra interior suave
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f8f9fa; // Fondo suave para los campos de entrada
+  &:focus {
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), 0 0 0 2px #007bff; // Doble sombra para enfocar
+    outline: none;
+  }
+}
+
+.update-button {
+  padding: 10px 25px;
+  font-size: 1.1em;
+  font-weight: 500; // Peso de fuente medio para los botones
+  border-radius: 8px;
+  border: none;
+  background-image: linear-gradient(45deg, #f6d365 0%, #fda085 100%); // Gradiente moderno y cálido para botones
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; // Transición para sombra y transformación
+  &:hover {
+    background-image: linear-gradient(45deg, #fda085 0%, #f6d365 100%); // Invertir gradiente al pasar el ratón
+    transform: translateY(-3px); // Levantar ligeramente el botón
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); // Sombra más pronunciada en hover
+  }
+}
+
+// Agrega media queries para responsividad
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 1.8em;
+  }
+}

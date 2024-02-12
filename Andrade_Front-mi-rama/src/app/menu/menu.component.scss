@@ -1,0 +1,30 @@
+.app-header {
+  // Resto de estilos de la cabecera...
+
+  z-index: 1000; // Asegúrate de que la cabecera tenga un z-index alto para estar sobre otros elementos.
+  
+  .navigation ul li a {
+    color: white; // Texto blanco o un color claro que contraste con el fondo.
+    background-color: #007bff; // Fondo azul o un color que contraste con el resto de la cabecera.
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+
+    &:hover, &:focus {
+      background-color: #0056b3;
+      color: #ffffff;
+      text-decoration: none; // Elimina el subrayado en hover y focus.
+    }
+  }
+}
+
+// Para asegurar la visibilidad en todas las resoluciones
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-direction: column;
+    li a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

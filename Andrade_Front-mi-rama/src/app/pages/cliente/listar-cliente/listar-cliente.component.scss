@@ -1,0 +1,86 @@
+.cliente-list {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2); // Sombra más pronunciada para un efecto 3D
+    background-color: #fff;
+  
+    .titulo-lista {
+      font-size: 2em;
+      color: #4a4a4a; // Color más moderno para el título
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 600; // Fuente más pesada para el título
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+  
+      thead {
+        tr {
+          background-color: #0056b3; // Color más oscuro para mejor contraste
+          color: #ffffff;
+  
+          th {
+            padding: 15px; // Aumentar el relleno para un aspecto más generoso
+            text-align: left;
+            font-weight: 600; // Fuente más pesada para los encabezados
+          }
+        }
+      }
+  
+      tbody {
+        tr {
+          &:nth-child(odd) {
+            background-color: #fafafa; // Color más claro para las filas alternas
+          }
+  
+          &:hover {
+            background-color: #f0f0f0; // Color de hover más sutil
+          }
+  
+          td {
+            padding: 15px; // Aumentar el relleno para mayor legibilidad
+            vertical-align: middle; // Alinear verticalmente el texto en la celda
+          }
+        }
+      }
+    }
+  
+    .btn-editar, .btn-eliminar {
+      padding: 8px 16px; // Aumentar el relleno para botones más accesibles
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-right: 8px;
+      font-size: 0.9em;
+      transition: background-color 0.2s ease; // Suavizar la transición de color
+  
+      &:hover {
+        transform: translateY(-2px); // Elevación sutil al pasar el mouse
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2); // Sombra en hover para efecto de elevación
+      }
+    }
+  
+    .btn-editar {
+      background-color: #f9c851; // Color más claro para el botón de editar
+      color: #333;
+  
+      &:hover {
+        background-color: #f0b429; // Oscurecer en hover para feedback
+      }
+    }
+  
+    .btn-eliminar {
+      background-color: #ff6b6b; // Color más claro para el botón de eliminar
+      color: #fff;
+  
+      &:hover {
+        background-color: #ff5252; // Oscurecer en hover para feedback
+      }
+    }
+  }
+  
